@@ -217,13 +217,15 @@ function waitForAppShell() {
   });
 }
 
-window.selectCategory = selectCategory;
+if (typeof window !== "undefined") {
+  window.selectCategory = selectCategory;
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await waitForAppShell();
-  attachEventListeners();
-  await loadUnits("Length");
-  setDefaultActiveButtons();
-  toggleOperators(false);
-  await loadHistory();
-});
+  document.addEventListener("DOMContentLoaded", async () => {
+    await waitForAppShell();
+    attachEventListeners();
+    await loadUnits("Length");
+    setDefaultActiveButtons();
+    toggleOperators(false);
+    await loadHistory();
+  });
+}

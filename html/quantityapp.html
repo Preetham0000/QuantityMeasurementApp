@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+</head>
+<body>
+
+  <section class="container">
+
+    <div class="section-block">
+      <h2 class="section-title">CHOOSE TYPE</h2>
+      <div class="type-row">
+        <div class="type-card selected">
+          <div class="type-icon">📏</div>
+          <div class="type-label">Length</div>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">⚖️</div>
+          <div class="type-label">Weight</div>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">🌡️</div>
+          <div class="type-label">Temperature</div>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">🧪</div>
+          <div class="type-label">Volume</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h2 class="section-title">CHOOSE ACTION</h2>
+      <div class="action-row">
+        <button class="action-btn active">Comparison</button>
+        <button class="action-btn">Conversion</button>
+        <button class="action-btn">Arithmetic</button>
+      </div>
+    </div>
+
+    <div class="converter-row">
+      <div class="converter-card">
+        <div class="converter-label">FROM</div>
+        <input type="text" inputmode="numeric" id="inputValue" placeholder="Enter value">
+        <select id="fromUnit"></select>
+      </div>
+
+      <div class="converter-card">
+        <div class="converter-label">TO</div>
+        <input type="text" id="result" placeholder="Result" readonly>
+        <select id="toUnit"></select>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

@@ -1,100 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantity Measurement App</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <title>Quantity Measurer</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Welcome to the Quantity Measurement</h1>
-    </header>
 
-    <main class="container app-shell">
-        <section class="selection-section">
-            <h2>CHOOSE TYPE</h2>
-            <div class="category-grid" id="categoryGrid">
-                <input type="radio" id="type-length" name="category" class="category-radio" checked>
-                <label for="type-length" class="category-card">
-                    <div class="icon-box">
-                        <img alt="Length" src="https://img.icons8.com/color/50/ruler.png">
-                    </div>
-                    <span>Length</span>
-                </label>
-                <input type="radio" id="type-weight" name="category" class="category-radio">
-                <label for="type-weight" class="category-card">
-                    <div class="icon-box">
-                        <img alt="Weight" src="https://img.icons8.com/color/50/scales.png">
-                    </div>
-                    <span>Weight</span>
-                </label>
-                <input type="radio" id="type-temperature" name="category" class="category-radio">
-                <label for="type-temperature" class="category-card">
-                    <div class="icon-box">
-                        <img alt="Temperature" src="https://img.icons8.com/color/50/thermometer.png">
-                    </div>
-                    <span>Temperature</span>
-                </label>
-                <input type="radio" id="type-volume" name="category" class="category-radio">
-                <label for="type-volume" class="category-card">
-                    <div class="icon-box">
-                        <img alt="Volume" src="https://img.icons8.com/color/50/measuring-cup.png">
-                    </div>
-                    <span>Volume</span>
-                </label>
-            </div>
-        </section>
+  <div id="header"></div>
+  <div id="app"></div>
 
-        <section class="selection-section">
-            <h2>CHOOSE ACTION</h2>
-            <div class="action-tabs">
-                <input type="radio" id="action-comparison" name="action" class="action-radio" checked>
-                <label for="action-comparison" class="action-btn">Comparison</label>
-                <input type="radio" id="action-conversion" name="action" class="action-radio">
-                <label for="action-conversion" class="action-btn">Conversion</label>
-                <input type="radio" id="action-arithmetic" name="action" class="action-radio">
-                <label for="action-arithmetic" class="action-btn">Arithmetic</label>
-            </div>
-        </section>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
 
-        <section class="conversion-section">
-            <form class="conversion-form">
-                <div class="conversion-card">
-                    <div class="input-group">
-                        <label for="fromValue">FROM</label>
-                        <input id="fromValue" step="any" type="number" value="1" name="fromValue">
-                        <select name="fromUnit" id="fromUnit" class="unit-select">
-                            <option value="ton">Ton</option>
-                            <option value="gram">Gram</option>
-                            <option value="kilogram" selected>Kilogram</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label for="toValue">TO</label>
-                        <input id="toValue" readonly type="text" value="1000" name="toValue">
-                        <select name="toUnit" id="toUnit" class="unit-select">
-                            <option value="ton">Ton</option>
-                            <option value="kilogram">Kilogram</option>
-                            <option value="gram" selected>Gram</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
+    fetch("quantityapp.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("app").innerHTML = data;
+      });
+  </script>
 
-    <footer class="site-footer">
-        <p class="footer-copy">&copy; 2026 Quantity Measurement. All rights reserved.</p>
-        <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="#" class="footer-link">Home</a>
-            <a href="#" class="footer-link">About</a>
-            <a href="#" class="footer-link">Privacy</a>
-            <a href="#" class="footer-link">Contact</a>
-        </nav>
-    </footer>
-    <script src="../js/script.js"></script>
+  <script type="module" src="../js/script.js"></script>
 </body>
 </html>
