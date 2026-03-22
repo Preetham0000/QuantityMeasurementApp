@@ -162,3 +162,27 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.25rem 1rem 1.5rem;
+    background: #452865;
+    text-align: center;
+
+}
+
+.footer-nav {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.footer-copy {
+    margin: 0;
+    color: #f3effa;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
