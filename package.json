@@ -1,0 +1,21 @@
+{
+  "name": "quantitymeasurementapp",
+  "version": "1.0.0",
+  "description": "A web-based system for converting, comparing, and performing arithmetic on quantities (Length, Weight, Temperature, Volume) with a modern UI and persistent history.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Preetham0000/QuantityMeasurementApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Preetham0000/QuantityMeasurementApp/issues"
+  },
+  "homepage": "https://github.com/Preetham0000/QuantityMeasurementApp#readme"
+}

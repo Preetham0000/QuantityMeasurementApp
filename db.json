@@ -311,86 +311,6 @@
   ],
   "history": [
     {
-      "id": "f0c1",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "1 km -> m",
-      "result": "1000",
-      "timestamp": "2026-03-22T17:06:33.464Z"
-    },
-    {
-      "id": "5656",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "1 km -> m",
-      "result": "1000",
-      "timestamp": "2026-03-22T17:06:51.560Z"
-    },
-    {
-      "id": "2707",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "1 km -> m",
-      "result": "1000",
-      "timestamp": "2026-03-22T17:06:57.779Z"
-    },
-    {
-      "id": "c1e2",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "0 km -> m",
-      "result": "0",
-      "timestamp": "2026-03-22T17:07:33.299Z"
-    },
-    {
-      "id": "c7f7",
-      "type": "weight",
-      "action": "Conversion",
-      "expression": "1 kg -> g",
-      "result": "1000",
-      "timestamp": "2026-03-22T17:28:40.100Z"
-    },
-    {
-      "id": "c061",
-      "type": "temperature",
-      "action": "Conversion",
-      "expression": "1 C -> K",
-      "result": "274.15",
-      "timestamp": "2026-03-22T17:29:06.770Z"
-    },
-    {
-      "id": "8226",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "1 km -> m",
-      "result": "1000",
-      "timestamp": "2026-03-23T00:50:22.636Z"
-    },
-    {
-      "id": "78c4",
-      "type": "length",
-      "action": "Arithmetic",
-      "expression": "1 km + 2 m",
-      "result": "1.002",
-      "timestamp": "2026-03-23T01:24:14.636Z"
-    },
-    {
-      "id": "a0b4",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "1 km -> m",
-      "result": "1000",
-      "timestamp": "2026-03-23T01:24:33.219Z"
-    },
-    {
-      "id": "efe9",
-      "type": "length",
-      "action": "Conversion",
-      "expression": "2 km -> m",
-      "result": "2000",
-      "timestamp": "2026-03-23T01:24:39.290Z"
-    },
-    {
       "id": "2e30",
       "type": "length",
       "action": "Comparison",
@@ -421,6 +341,47 @@
       "expression": "1 km + 2 m",
       "result": "1.002",
       "timestamp": "2026-03-23T01:56:55.036Z"
+    },
+    {
+      "type": "volume",
+      "action": "Conversion",
+      "expression": "12 L -> mL",
+      "result": "12000",
+      "timestamp": "2026-03-23T06:36:12.632Z",
+      "id": "J39uMkenSC8"
+    },
+    {
+      "type": "temperature",
+      "action": "Conversion",
+      "expression": "23 C -> F",
+      "result": "73.4",
+      "timestamp": "2026-03-23T06:36:27.849Z",
+      "id": "xIt4ieCtvDc"
+    },
+    {
+      "type": "temperature",
+      "action": "Conversion",
+      "expression": "23 C -> F",
+      "result": "73.4",
+      "timestamp": "2026-03-23T06:36:33.381Z",
+      "id": "ZtE92TEiDwY"
+    },
+    {
+      "type": "temperature",
+      "action": "Conversion",
+      "expression": "30 C -> F",
+      "result": "86",
+      "timestamp": "2026-03-23T06:36:44.929Z",
+      "id": "pXCbinl6-Pg"
+    },
+    {
+      "type": "temperature",
+      "action": "Conversion",
+      "expression": "30 C -> F",
+      "result": "86",
+      "timestamp": "2026-03-23T06:37:12.179Z",
+      "id": "b1KXpMqOL9U"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -98,21 +98,21 @@ export function toggleOperators(show) {
 
 export function renderHistory(records) {
   const list = document.querySelector("#history-list");
-  if (!list) {
-    return;
-  }
-
+  if (!list) return;
   const safeRecords = Array.isArray(records) ? records : [];
   list.innerHTML = "";
-
   if (!safeRecords.length) {
     list.innerHTML = "<li>No history yet.</li>";
     return;
   }
-
-  safeRecords.forEach((r) => {
+  safeRecords.forEach(r => {
     const li = document.createElement("li");
-    li.textContent = `${r.expression}  =  ${r.result}  (${new Date(r.timestamp).toLocaleString()})`;
+    const date = new Date(r.timestamp);
+    const ts = document.createElement("span");
+    ts.className = "history-timestamp";
+    ts.textContent = date.toLocaleString();
+    li.appendChild(ts);
+    li.appendChild(document.createTextNode(` ${r.expression} = ${r.result}`));
     list.appendChild(li);
   });
 }

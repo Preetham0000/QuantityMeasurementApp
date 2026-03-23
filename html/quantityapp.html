@@ -5,11 +5,10 @@
   <title>App</title>
 </head>
 <body>
-
-  <section class="container">
-
-    <div class="section-block">
-      <h2 class="section-title">CHOOSE TYPE</h2>
+  <div class="app-layout">
+    <section class="container">
+      <div class="section-block">
+        <h2 class="section-title">CHOOSE TYPE</h2>
       <div class="type-row">
         <div class="type-card selected" data-type="length">
           <div class="type-icon">📏</div>
@@ -66,12 +65,16 @@
       <input type="text" id="result" class="result-field" placeholder="Result" readonly>
     </div>
 
-    <div class="section-block">
-      <h2 class="section-title">HISTORY</h2>
-      <ul id="history-list" class="history-list"></ul>
-    </div>
-
   </section>
+
+  <aside class="history-container">
+    <h2 class="section-title">HISTORY</h2>
+    <ul id="history-list" class="history-list"></ul>
+  </aside>
+
+  
+</div>
+
   <footer class="site-footer">
         <p class="footer-copy">&copy; 2026 Quantity Measurement. All rights reserved.</p>
         <nav class="footer-nav" aria-label="Footer navigation"></nav>
